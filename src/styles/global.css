@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-brand-light-green: #D9E6A2;
+  --color-brand-green: #A8C038;
+  --color-brand-dark-green: #404B35;
+  --color-brand-slate: #2F363F; /* New slate color from image */
+  --color-brand-slate-light: #3F4750; /* Lighter shade for cards */
+  --color-brand-charcoal: #313F45;
+  --color-brand-text: #1a1a1a;
+  --color-brand-bg: #FDFDFD;
+  
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Custom Utilities or Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-text);
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
