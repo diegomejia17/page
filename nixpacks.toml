@@ -1,15 +1,8 @@
-# nixpacks.toml para Astro SSR
-
 [phases.setup]
-nixPkgs = ["nodejs", "npm"] # O "pnpm" / "yarn" según uses
-
+nixPkgs = ["nodejs"] 
 [phases.install]
-cmds = ["npm ci"] # Instala dependencias de forma limpia
-
+cmds = ["npm ci"]
 [phases.build]
-cmds = ["npm run build"] # Ejecuta 'astro build'
-
+cmds = ["npm run build"]
 [start]
-# El comando para iniciar el servidor en producción.
-# Asegúrate de que coincida con la salida de tu adaptador (usualmente dist/server/entry.mjs)
 cmd = "node ./dist/server/entry.mjs"
