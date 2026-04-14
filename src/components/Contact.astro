@@ -1,230 +1,240 @@
 ---
-
+import { EMAIL, LINKEDIN, GITHUB } from "../lib/constants";
+let date = new Date();
+date = date.getFullYear();
 ---
 
 <section id="contacto" class="py-20 px-6 max-w-7xl mx-auto space-y-16">
-    <!-- Header -->
-    <div class="text-center space-y-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-brand-dark-green">
-            Trabajemos juntos
-        </h2>
-        <p class="text-neutral-600 max-w-xl mx-auto">
-            ¿Tienes un proyecto en mente? Hablemos sobre cómo puedo ayudarte a
-            hacerlo realidad.
-        </p>
-    </div>
+  <!-- Header -->
+  <div class="text-center space-y-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark-green">
+      Trabajemos juntos
+    </h2>
+    <p class="text-neutral-600 max-w-xl mx-auto">
+      ¿Tienes un proyecto en mente? Hablemos sobre cómo puedo ayudarte a hacerlo
+      realidad.
+    </p>
+  </div>
 
-    <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
-        <!-- Contact Methods -->
-        <div class="space-y-8">
-            <h3 class="text-xl font-bold text-brand-dark-green">
-                Métodos de Contacto
-            </h3>
+  <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+    <!-- Contact Methods -->
+    <div class="space-y-8">
+      <h3 class="text-xl font-bold text-brand-dark-green">
+        Métodos de Contacto
+      </h3>
 
-            <div class="space-y-6">
-                <a
-                    href="mailto:hola@diegomejia.dev"
-                    class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-neutral-100 hover:border-brand-green/30 hover:shadow-md transition-all group"
-                >
-                    <div
-                        class="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center text-neutral-600 group-hover:bg-brand-light-green group-hover:text-brand-dark-green transition-colors"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="w-6 h-6"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                            ></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="text-xs text-neutral-500 font-medium">
-                            Email
-                        </p>
-                        <p class="text-brand-dark-green font-medium">
-                            hola@diegomejia.dev
-                        </p>
-                    </div>
-                </a>
-
-                <a
-                    href="#"
-                    class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-neutral-100 hover:border-brand-green/30 hover:shadow-md transition-all group"
-                >
-                    <div
-                        class="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center text-neutral-600 group-hover:bg-brand-light-green group-hover:text-brand-dark-green transition-colors"
-                    >
-                        <svg
-                            class="h-6 w-6"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="text-xs text-neutral-500 font-medium">
-                            LinkedIn
-                        </p>
-                        <p class="text-brand-dark-green font-medium">
-                            diegomejia
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Availability Badge -->
-            <div
-                class="p-6 bg-brand-light-green/20 rounded-2xl border border-brand-light-green/30"
-            >
-                <h4
-                    class="font-bold text-brand-dark-green mb-2 flex items-center gap-2"
-                >
-                    Disponibilidad
-                    <span class="relative flex h-3 w-3">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"
-                        ></span>
-                        <span
-                            class="relative inline-flex rounded-full h-3 w-3 bg-brand-green"
-                        ></span>
-                    </span>
-                </h4>
-                <p class="text-sm text-neutral-700">
-                    Actualmente aceptando nuevos proyectos para Q1 2024. Agenda
-                    una llamada exploratoria gratuita.
-                </p>
-            </div>
-        </div>
-
-        <!-- Form -->
-        <form
-            id="contact-form"
-            class="bg-white p-8 rounded-3xl shadow-sm border border-neutral-100 space-y-6"
+      <div class="space-y-6">
+        <a
+          href={`mailto:${EMAIL}`}
+          class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-neutral-100 hover:border-brand-green/30 hover:shadow-md transition-all group"
         >
-            <div>
-                <label
-                    for="name"
-                    class="block text-sm font-medium text-brand-dark-green mb-2"
-                    >Nombre</label
-                >
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    class="w-full px-4 py-3 rounded-xl bg-neutral-50 border-transparent focus:bg-white focus:border-brand-green focus:ring-4 focus:ring-brand-light-green/20 transition-all outline-none"
-                    placeholder="Tu nombre"
-                />
-            </div>
-
-            <div>
-                <label
-                    for="email"
-                    class="block text-sm font-medium text-brand-dark-green mb-2"
-                    >Email</label
-                >
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    class="w-full px-4 py-3 rounded-xl bg-neutral-50 border-transparent focus:bg-white focus:border-brand-green focus:ring-4 focus:ring-brand-light-green/20 transition-all outline-none"
-                    placeholder="tucorreo@ejemplo.com"
-                />
-            </div>
-
-            <div>
-                <label
-                    for="message"
-                    class="block text-sm font-medium text-brand-dark-green mb-2"
-                    >Mensaje</label
-                >
-                <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows="4"
-                    class="w-full px-4 py-3 rounded-xl bg-neutral-50 border-transparent focus:bg-white focus:border-brand-green focus:ring-4 focus:ring-brand-light-green/20 transition-all outline-none"
-                    placeholder="Cuéntame sobre tu proyecto..."></textarea>
-            </div>
-
-            <button
-                type="submit"
-                id="submit-button"
-                class="w-full py-4 bg-brand-green text-white font-bold rounded-xl hover:bg-brand-dark-green transition-colors shadow-lg shadow-brand-green/20 disabled:opacity-50 disabled:cursor-not-allowed"
+          <div
+            class="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center text-neutral-600 group-hover:bg-brand-light-green group-hover:text-brand-dark-green transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
             >
-                Enviar mensaje
-            </button>
-            <p id="form-message" class="text-center text-sm hidden"></p>
-        </form>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs text-neutral-500 font-medium">Correo</p>
+            <p class="text-brand-dark-green font-medium">{EMAIL}</p>
+          </div>
+        </a>
+
+        <a
+          href={`${LINKEDIN}`}
+          class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-neutral-100 hover:border-brand-green/30 hover:shadow-md transition-all group"
+        >
+          <div
+            class="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center text-neutral-600 group-hover:bg-brand-light-green group-hover:text-brand-dark-green transition-colors"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs text-neutral-500 font-medium">LinkedIn</p>
+            <p class="text-brand-dark-green font-medium">mejiadiego17</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Availability Badge -->
+      <div
+        class="p-6 bg-brand-light-green/20 rounded-2xl border border-brand-light-green/30"
+      >
+        <h4
+          class="font-bold text-brand-dark-green mb-2 flex items-center gap-2"
+        >
+          Disponibilidad
+          <span class="relative flex h-3 w-3">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"
+            ></span>
+            <span
+              class="relative inline-flex rounded-full h-3 w-3 bg-brand-green"
+            ></span>
+          </span>
+        </h4>
+        <p class="text-sm text-neutral-700">
+          Actualmente aceptando nuevos proyectos para Q1 2024. Agenda una
+          llamada exploratoria gratuita.
+        </p>
+      </div>
     </div>
+
+    <!-- Form -->
+    <form
+      id="contact-form"
+      class="bg-white p-8 rounded-3xl shadow-sm border border-neutral-100 space-y-6"
+    >
+      <div>
+        <label
+          for="name"
+          class="block text-sm font-medium text-brand-dark-green mb-2"
+          >Nombre</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full px-4 py-3 rounded-xl bg-neutral-50 border-transparent focus:bg-white focus:border-brand-green focus:ring-4 focus:ring-brand-light-green/20 transition-all outline-none"
+          placeholder="Tu nombre"
+        />
+      </div>
+
+      <div>
+        <label
+          for="email"
+          class="block text-sm font-medium text-brand-dark-green mb-2"
+          >Email</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full px-4 py-3 rounded-xl bg-neutral-50 border-transparent focus:bg-white focus:border-brand-green focus:ring-4 focus:ring-brand-light-green/20 transition-all outline-none"
+          placeholder="tucorreo@ejemplo.com"
+        />
+      </div>
+
+      <div>
+        <label
+          for="message"
+          class="block text-sm font-medium text-brand-dark-green mb-2"
+          >Mensaje</label
+        >
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows="4"
+          class="w-full px-4 py-3 rounded-xl bg-neutral-50 border-transparent focus:bg-white focus:border-brand-green focus:ring-4 focus:ring-brand-light-green/20 transition-all outline-none"
+          placeholder="Cuéntame sobre tu proyecto..."></textarea>
+      </div>
+
+      <button
+        type="submit"
+        id="submit-button"
+        class="w-full py-4 bg-brand-green text-white font-bold rounded-xl hover:bg-brand-dark-green transition-colors shadow-lg shadow-brand-green/20 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Enviar mensaje
+      </button>
+      <p id="form-message" class="text-center text-sm hidden"></p>
+    </form>
+  </div>
 </section>
 
 <script>
-    const form = document.getElementById("contact-form") as HTMLFormElement;
-    const submitButton = document.getElementById(
-        "submit-button",
-    ) as HTMLButtonElement;
-    const messageElement = document.getElementById("form-message");
+  const form = document.getElementById("contact-form") as HTMLFormElement;
+  const submitButton = document.getElementById(
+    "submit-button",
+  ) as HTMLButtonElement;
+  const messageElement = document.getElementById("form-message");
 
-    if (form) {
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault();
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-            // Disable button
-            submitButton.disabled = true;
-            submitButton.textContent = "Enviando...";
-            messageElement?.classList.add("hidden");
+      // Disable button
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Enviando...";
+      }
 
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData);
+      if (messageElement) {
+        messageElement.classList.add("hidden");
+        messageElement.className = ""; // Reset classes
+      }
 
-            try {
-                const response = await fetch("/api/contact", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(data),
-                });
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData);
 
-                const result = await response.json();
-
-                if (response.ok) {
-                    form.reset();
-                    if (messageElement) {
-                        messageElement.textContent = result.message;
-                        messageElement.className =
-                            "text-center text-sm text-green-600 mt-4 block p-3 bg-green-50 rounded-lg";
-                        messageElement.classList.remove("hidden");
-                    }
-                } else {
-                    throw new Error(result.message || "Error al enviar");
-                }
-            } catch (error) {
-                if (messageElement) {
-                    messageElement.textContent =
-                        "Hubo un error al enviar el mensaje. Inténtalo de nuevo.";
-                    messageElement.className =
-                        "text-center text-sm text-red-600 mt-4 block p-3 bg-red-50 rounded-lg";
-                    messageElement.classList.remove("hidden");
-                }
-            } finally {
-                submitButton.disabled = false;
-                submitButton.textContent = "Enviar mensaje";
-            }
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         });
-    }
+
+        const result = await response.json();
+
+        if (response.ok) {
+          form.reset();
+          if (messageElement) {
+            messageElement.textContent = result.message;
+            messageElement.className =
+              "text-center text-sm text-green-600 mt-4 block p-3 bg-green-50 rounded-lg";
+            messageElement.classList.remove("hidden");
+          }
+        } else {
+          let errorMessage = result.message || "Error al enviar";
+          if (result.errors) {
+            // Basic formatting for validation errors if present
+            const errorDetails = Object.values(result.errors).flat().join(", ");
+            if (errorDetails) errorMessage += `: ${errorDetails}`;
+          }
+          throw new Error(errorMessage);
+        }
+      } catch (error) {
+        if (messageElement) {
+          messageElement.textContent =
+            error instanceof Error
+              ? error.message
+              : "Hubo un error al enviar el mensaje. Inténtalo de nuevo.";
+          messageElement.className =
+            "text-center text-sm text-red-600 mt-4 block p-3 bg-red-50 rounded-lg";
+          messageElement.classList.remove("hidden");
+        }
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = "Enviar mensaje";
+        }
+      }
+    });
+  }
 </script>
