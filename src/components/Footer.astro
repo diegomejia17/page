@@ -1,4 +1,5 @@
 ---
+import { EMAIL, LINKEDIN, GITHUB } from "../lib/constants";
 const currentYear: number = new Date().getFullYear();
 ---
 
@@ -57,7 +58,9 @@ const currentYear: number = new Date().getFullYear();
             <div class="flex gap-4">
                 <!-- LinkedIn -->
                 <a
-                    href="#"
+                    href={LINKEDIN}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="w-10 h-10 bg-white text-brand-slate rounded-xl flex items-center justify-center hover:bg-brand-light-green hover:text-brand-dark-green transition-colors shadow-sm"
                 >
                     <svg
@@ -79,7 +82,9 @@ const currentYear: number = new Date().getFullYear();
                 </a>
                 <!-- GitHub -->
                 <a
-                    href="#"
+                    href={GITHUB}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="w-10 h-10 bg-white text-brand-slate rounded-xl flex items-center justify-center hover:bg-brand-light-green hover:text-brand-dark-green transition-colors shadow-sm"
                 >
                     <svg
@@ -98,7 +103,7 @@ const currentYear: number = new Date().getFullYear();
                 </a>
                 <!-- Email -->
                 <a
-                    href="mailto:hola@diegomejia.dev"
+                    href={`mailto:${EMAIL}`}
                     class="w-10 h-10 bg-white text-brand-slate rounded-xl flex items-center justify-center hover:bg-brand-light-green hover:text-brand-dark-green transition-colors shadow-sm"
                 >
                     <svg

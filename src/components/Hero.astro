@@ -1,5 +1,5 @@
 ---
-
+import { LINKEDIN, GITHUB } from "../lib/constants";
 ---
 
 <section
@@ -62,7 +62,9 @@
         <!-- Social Links -->
         <div class="flex items-center justify-center gap-6 pt-8">
             <a
-                href="#"
+                href={LINKEDIN}
+                target="_blank"
+                rel="noopener noreferrer"
                 class="text-neutral-500 hover:text-brand-dark-green transition-colors"
             >
                 <span class="sr-only">LinkedIn</span>
@@ -79,7 +81,9 @@
                 </svg>
             </a>
             <a
-                href="#"
+                href={GITHUB}
+                target="_blank"
+                rel="noopener noreferrer"
                 class="text-neutral-500 hover:text-brand-dark-green transition-colors"
             >
                 <span class="sr-only">GitHub</span>
